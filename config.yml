@@ -1,0 +1,17 @@
+﻿# IMAP Email account connection details.
+host:
+  username: 
+  password: 
+  imap_host: imap.runbox.com
+  imap_port: 993
+email:
+  to: 
+  from: 
+  subject: YMS
+folders:
+  Info: Φ
+  Business: β
+  Ayaigi: α
+margin_time: 24
+send_time:
+  ["05:00"]
