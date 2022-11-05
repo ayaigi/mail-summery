@@ -7,7 +7,7 @@ from email.mime.multipart import MIMEMultipart
 
 def iterate(config, fake):
     if fake:
-        testMails()
+        mails = testMails()
     else:
         mails = recieve(config)
 

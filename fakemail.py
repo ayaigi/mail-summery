@@ -1,4 +1,5 @@
 def testMails():
+    print('fake mails created')
     return [
     {'Name': 'Ayaigi', 'Emails': 
         [{

@@ -1,12 +1,12 @@
 import email
 from imapclient import IMAPClient
 from datetime import date, datetime, timedelta
-import dateutil.parser as parser
+from createmail import stnTime
 
 
 def withhin(dt, time):
     now = datetime.now().astimezone()
-    dif = now - parser.parse(dt)   #datetime.strptime(dt, "%a, %d %b %Y %H:%M:%S %z").astimezone()
+    dif = now - stnTime(dt)   #datetime.strptime(dt, "%a, %d %b %Y %H:%M:%S %z").astimezone()
     return (dif<timedelta(hours=time))
  
         

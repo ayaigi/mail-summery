@@ -1,12 +1,12 @@
 ﻿# IMAP Email account connection details.
 host:
-  username: 
-  password: 
+  username: test
+  password: 1234
   imap_host: imap.runbox.com
   imap_port: 993
 email:
-  to: 
-  from: 
+  to: test
+  from: test
   subject: YMS
 folders:
   Info: Φ

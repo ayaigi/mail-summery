@@ -90,6 +90,10 @@ def shoFrm(name = ""):
     return na[0] if na[0] != '' else na[1]
 
 def reformDate(date):
+    do = stnTime(date).strftime("%H:%M")
+    return do
+
+def stnTime(date):
     dtfs = [
         "%a, %d %b %Y %H:%M:%S %z",
         "%a, %d %b %Y %H:%M:%S %Z",
@@ -108,6 +112,5 @@ def reformDate(date):
             dt = False
     if dt == False:
         print("ErrorNoParsing: " + date)
-        dt = datetime.datetime.strptime("01.01.1970:12:00:00", "%d.%m.%Y:%H:%M:%S") 
-    do = dt.strftime("%H:%M")
-    return do
+        dt = datetime.datetime.strptime("01.01.1970:12:00:00", "%d.%m.%Y:%H:%M:%S")
+    return dt
