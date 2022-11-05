@@ -1,6 +1,5 @@
 import smtplib
 from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
 
 def sendMail(config: list, mail: MIMEMultipart):
     mail["From"] = config['email']['from']

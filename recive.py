@@ -1,4 +1,3 @@
-import logging
 import email
 from imapclient import IMAPClient
 from datetime import date, datetime, timedelta

@@ -19,6 +19,7 @@ def main():
     sendtime = sorted(list(map(reTime, config['send_time'])))
     
     while(True):
+        iterate(config, True)
         for time in sendtime:
             dt = next_time(time)
             print("wait until {}".format(dt))
@@ -51,4 +52,3 @@ def timesecs(t):
 
 
 main()
-#iterate(config)
